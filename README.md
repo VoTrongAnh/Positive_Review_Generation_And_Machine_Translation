@@ -40,9 +40,7 @@ The reward function evaluates generated text based on three criteria:
 
 The final reward is normalized using the following formula:
 
-[
-R_{final} = \frac{\tanh(1.5R)}{2} + 0.5
-]
+$$R_{\text{final}} = \frac{\tanh(R \times 1.5)}{2} + 0.5$$
 
 This transformation stabilizes the reward range and improves training efficiency.
 
